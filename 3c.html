@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3C数码类 - 李欢跨境设计作品集</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1d1d1f;
+            --secondary: #0071e3;
+            --light-gray: #f5f5f7;
+            --mid-gray: #e8e8ed;
+            --shadow-sm: 0 4px 20px rgba(0,0,0,0.05);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+            --transition-base: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft Yahei", sans-serif;
+            background-color: var(--light-gray);
+            padding: 80px 24px 48px;
+        }
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 32px;
+            padding: 8px 20px;
+            background-color: var(--primary);
+            color: #fff;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+        .back-btn:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+        .page-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 48px;
+            letter-spacing: -0.5px;
+        }
+        .works-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+        }
+        .work-item {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-base);
+        }
+        .work-item:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-6px);
+        }
+        .work-img {
+            width: 100%;
+            height: auto;
+            background-color: var(--mid-gray);
+        }
+        .work-img img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* 无压缩/无切割 */
+            display: block;
+        }
+        .work-desc {
+            padding: 20px;
+            font-size: 15px;
+            color: #6e6e73;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+            .works-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← 返回首页</a>
+        <h1 class="page-title">3C数码类作品合集</h1>
+        <div class="works-gallery">
+            <div class="work-item">
+                <div class="work-img">
+                    <img src="3c1.jpg" alt="迷你PC">
+                </div>
+                <div class="work-desc">迷你PC（AMD Ryzen AI A9 HX370） - 独立站详情页（页面停留时长增加30%）</div>
+            </div>
+            <!-- 新增图片直接复制结构 -->
+        </div>
+    </div>
+</body>
+</html>
